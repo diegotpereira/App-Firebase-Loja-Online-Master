@@ -34,7 +34,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-import br.com.java.app_firebase_loja_online_master.MainActivity;
+import br.com.java.app_firebase_loja_online_master.ui.MainActivity;
 import br.com.java.app_firebase_loja_online_master.R;
 
 

@@ -28,7 +28,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import br.com.java.app_firebase_loja_online_master.MainActivity;
+import br.com.java.app_firebase_loja_online_master.ui.MainActivity;
 import br.com.java.app_firebase_loja_online_master.R;
 
 //import static br.com.java.app_firebase_loja_online_master.fragment.RegistrarFragmento.emRedefinirFragmentodeSenha;

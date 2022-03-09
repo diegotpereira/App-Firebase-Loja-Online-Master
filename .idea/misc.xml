@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/drawable/splash_activity_background.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/activity_main.xml" value="0.271286231884058" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/activity_registrar.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/app_bar_principal.xml" value="0.271286231884058" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/content_principal.xml" value="0.271286231884058" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/entrar_dialog.xml" value="0.1" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/fragmento_entrar.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/fragmento_principal.xml" value="0.26721014492753625" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/fragmento_registrar.xml" value="0.1" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/nav_header_principal.xml" value="0.271286231884058" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_registrar.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/fragmento_entrar.xml" value="0.1" />
