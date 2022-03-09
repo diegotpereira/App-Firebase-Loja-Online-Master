@@ -1,11 +1,14 @@
 package br.com.java.app_firebase_loja_online_master.fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,5 +68,30 @@ public class EntrarFragmento extends Fragment {
 
             }
         });
+    }
+    private void definirFragmento(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.deslize_na_direita, R.anim.deslize_na_esquerda);
+        fragmentTransaction.replace(parentFrameLayout.getId(), fragment);
+        fragmentTransaction.commit();
+    }
+    private void verifiqueAsEntradas() {
+        if (!TextUtils.isEmpty(email.getText())) {
+            if (!TextUtils.isEmpty(password.getText())) {
+                btn_entrar.setEnabled(true);
+                btn_entrar.setTextColor(Color.rgb(0, 0, 0));
+            } else {
+                btn_entrar.setEnabled(false);
+                btn_entrar.setTextColor(Color.argb(50, 0, 0, 0));
+            }
+        } else {
+            btn_entrar.setEnabled(false);
+            btn_entrar.setTextColor(Color.argb(50, 0, 0, 0));
+        }
+    }
+    private void verificarEmailEhPadrao() {
+        if (email.getText().toString().matches(emailPadrao)) {
+
+        }
     }
 }
