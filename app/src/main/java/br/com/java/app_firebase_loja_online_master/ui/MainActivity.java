@@ -22,11 +22,15 @@ import android.widget.ImageView;
 import com.google.android.material.navigation.NavigationView;
 
 import br.com.java.app_firebase_loja_online_master.R;
+import br.com.java.app_firebase_loja_online_master.fragment.MeusPedidosFragmento;
 import br.com.java.app_firebase_loja_online_master.fragment.PrincipalFragmento;
+import static br.com.java.app_firebase_loja_online_master.ui.RegistrarActivity.definirFragmentoInscricao;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private static final int PRINCIPAL_FRAGMENTO = 0;
+    private static final int CARRINHO_FRAGMENTO  = 1;
+    private static final int PEDIDOS_FRAGMENTO = 2;
     public static Boolean exibirCarrinho = false;
     private FrameLayout frameLayout;
     private ImageView actionBarLogo;
@@ -109,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void onClick(View view) {
                     entrarDialog.dismiss();
-
+                    definirFragmentoInscricao = false;
                     startActivity(registrarIntent);
                 }
             });
@@ -117,14 +121,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void onClick(View view) {
                     entrarDialog.dismiss();
-
+                    definirFragmentoInscricao = true;
                     startActivity(registrarIntent);
                 }
             });
             entrarDialog.show();
 
             return true;
-        } else if(id == android.R.id.home);
+        } else if(id == android.R.id.home) {
+            if (exibirCarrinho) {
+                exibirCarrinho = false;
+                finish();
+
+                return true;
+            }
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -134,6 +145,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setTitle(titulo);
         invalidateOptionsMenu();
         definirFragmento(fragment, fragmentoNo);
+        if (fragmentoNo == CARRINHO_FRAGMENTO) {
+            navigationView.getMenu().getItem(3).setChecked(true);
+        }
 
     }
     @SuppressWarnings("StatementWithEmptyBody")
@@ -146,7 +160,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             actionBarLogo.setVisibility(View.VISIBLE);
             invalidateOptionsMenu();
             definirFragmento(new PrincipalFragmento(), PRINCIPAL_FRAGMENTO);
-
+        } else if (id == R.id.nav_my_orders) {
+            irParaFragmento("Meus Pedidos", new MeusPedidosFragmento(), PEDIDOS_FRAGMENTO);
         }
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerLayout.closeDrawer(GravityCompat.START);

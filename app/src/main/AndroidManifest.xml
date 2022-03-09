@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppFirebaseLojaOnlineMaster">
         <activity
+            android:name=".ui.ExibirTudoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CategoriaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.EntrarActivity"
             android:exported="false" />
         <activity
@@ -17,8 +23,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
