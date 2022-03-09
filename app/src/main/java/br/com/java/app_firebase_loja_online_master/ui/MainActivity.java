@@ -28,6 +28,8 @@ import static br.com.java.app_firebase_loja_online_master.ui.RegistrarActivity.d
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
+    // link principal https://github.com/rudreshmehta/Ecommerce-Firebase-app
+
     private static final int PRINCIPAL_FRAGMENTO = 0;
     private static final int CARRINHO_FRAGMENTO  = 1;
     private static final int PEDIDOS_FRAGMENTO = 2;
