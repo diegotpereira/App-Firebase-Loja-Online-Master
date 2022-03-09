@@ -28,7 +28,7 @@ public class RegistrarActivity extends AppCompatActivity {
             definirFragmentoInscricao = false;
             definirFragmentoPadrao(new RegistrarFragmento());
         } else {
-            definirFragmentoPadrao(new RegistrarFragmento());
+            definirFragmentoPadrao(new EntrarFragmento());
         }
     }
 
