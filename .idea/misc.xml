@@ -21,8 +21,24 @@
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/layout/nav_header_principal.xml" value="0.271286231884058" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/App-Firebase-Loja-Online-Master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15885416666666666" />
-        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_registrar.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/drawable/splash_activity_background.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_categoria.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_entrar.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_exibir_tudo.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/activity_registrar.xml" value="0.16" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/app_bar_principal.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/categoria_item.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/content_principal.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/entrar_dialog.xml" value="0.536" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/faixa_anuncio_layout.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/fragmento_entrar.xml" value="0.1" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/fragmento_meus_pedidos.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/fragmento_principal.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/fragmento_registrar.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/horizontal_scroll_layout.xml" value="0.536" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/layout_de_anuncio_deslizante.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/diego/AndroidStudioProjects/AppFirebaseLojaOnlineMaster/app/src/main/res/layout/nav_header_principal.xml" value="0.12708333333333333" />
       </map>
     </option>
   </component>

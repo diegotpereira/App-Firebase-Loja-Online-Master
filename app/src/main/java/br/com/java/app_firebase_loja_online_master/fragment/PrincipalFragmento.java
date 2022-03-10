@@ -1,5 +1,11 @@
 package br.com.java.app_firebase_loja_online_master.fragment;
 
+import static br.com.java.app_firebase_loja_online_master.queries.DBConsultas.carregarCategorias;
+import static br.com.java.app_firebase_loja_online_master.queries.DBConsultas.carregarCategoriasNomes;
+import static br.com.java.app_firebase_loja_online_master.queries.DBConsultas.carregarFragmentoDado;
+import static br.com.java.app_firebase_loja_online_master.queries.DBConsultas.categoriaModeloLista;
+import static br.com.java.app_firebase_loja_online_master.queries.DBConsultas.listas;
+
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -14,6 +20,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,16 +101,50 @@ public class PrincipalFragmento extends Fragment {
         if (networkInfo != null && networkInfo.isConnected() == true) {
             naoConectadoInternet.setVisibility(View.GONE);
 
-//            if (categoriaModeloLista.size() == 0) {
-//
-//            }
+            if (categoriaModeloLista.size() == 0) {
+                carregarCategorias(categoriaRecyclerView, getContext());
+            } else {
+                categoriaAdapter =  new CategoriaAdapter(categoriaModeloLista);
+                categoriaAdapter.notifyDataSetChanged();
+            }
+            categoriaRecyclerView.setAdapter(categoriaAdapter);
+            if (listas.size() == 0) {
+                carregarCategoriasNomes.add("Principal");
+                listas.add(new ArrayList<PrincipalPaginaModelo>());
+
+                carregarFragmentoDado(principalPaginaRecyclerView, getContext(), 0, "Principal");
+            } else {
+                adapter = new PrincipalPaginaAdapter(listas.get(0));
+                adapter.notifyDataSetChanged();
+            }
+            principalPaginaRecyclerView.setAdapter(adapter);
+        } else {
+            Glide.with(this).load(R.drawable.no_internet_connection).into(naoConectadoInternet);
+            naoConectadoInternet.setVisibility(View.VISIBLE);
         }
         // Atualizar layout
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 swipeRefreshLayout.setRefreshing(true);
+                categoriaModeloLista.clear();
+                listas.clear();
+                carregarCategoriasNomes.clear();
 
+                if (networkInfo != null && networkInfo.isConnected() == true) {
+                    naoConectadoInternet.setVisibility(View.GONE);
+                    categoriaAdapter = new CategoriaAdapter(categoriaModeloFakeLista);
+                    adapter = new PrincipalPaginaAdapter(principalPaginaModeloFakeLista);
+                    categoriaRecyclerView.setAdapter(categoriaAdapter);
+                    principalPaginaRecyclerView.setAdapter(adapter);
+                    carregarCategorias(categoriaRecyclerView, getContext());
+                    carregarCategoriasNomes.add("Principal");
+                    listas.add(new ArrayList<PrincipalPaginaModelo>());
+                    carregarFragmentoDado(principalPaginaRecyclerView, getContext(), 0 , "Principal");
+                } else {
+                    Glide.with(getContext()).load(R.drawable.no_internet_connection).into(naoConectadoInternet);
+                    naoConectadoInternet.setVisibility(View.VISIBLE);
+                }
             }
         });
 
